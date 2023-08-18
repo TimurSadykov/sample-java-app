@@ -8,11 +8,12 @@ import java.io.IOException;
  */
 public class App 
 {
-    public static void main( String[] args ) throws IOException {
+    public static void main( String[] args ) throws Exception {
         String projectId = "stellar-day-254222";//"gcloud-devel";//
 
 
-        //new TranslateSample().RunSample();
-        new FirestoreSample().RunSample(projectId);
+        //LoggingSample.TryGetLogs();
+        new TranslateSample().RunSample();
+        //new FirestoreSample().RunSample(projectId);
     }
 }
